@@ -10,9 +10,9 @@ Download the latest build for your platform:
 
 | Platform | Download |
 |---|---|
-| Linux (x86_64) | [bigbluebutton-cli-linux-amd64](dist/bigbluebutton-cli-linux-amd64?raw=true) |
-| Linux (ARM64) | [bigbluebutton-cli-linux-arm64](dist/bigbluebutton-cli-linux-arm64?raw=true) |
-| Windows (x86_64) | [bigbluebutton-cli-windows-amd64.exe](dist/bigbluebutton-cli-windows-amd64.exe?raw=true) |
+| Linux (x86_64) | [bigbluebutton-cli-linux-amd64](https://raw.githubusercontent.com/invokablegmbh/bigbluebutton-cli/refs/heads/master/dist/bigbluebutton-cli-linux-amd64) |
+| Linux (ARM64) | [bigbluebutton-cli-linux-arm64](https://raw.githubusercontent.com/invokablegmbh/bigbluebutton-cli/refs/heads/master/dist/bigbluebutton-cli-linux-arm64) |
+| Windows (x86_64) | [bigbluebutton-cli-windows-amd64.exe](https://raw.githubusercontent.com/invokablegmbh/bigbluebutton-cli/refs/heads/master/dist/bigbluebutton-cli-windows-amd64.exe) |
 
 ```bash
 # Example: Linux x86_64
