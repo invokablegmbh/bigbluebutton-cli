@@ -1,6 +1,6 @@
 # bigbluebutton-cli
 
-A command line interface for the [BigBlueButton](https://bigbluebutton.org/) API. Manage meetings, recordings, and more from your terminal.
+A command line interface for the [BigBlueButton API](https://bbbserver.com/bigbluebutton-api-guide). Manage your [BigBlueButton](https://bigbluebutton.org) server meetings, recordings, and more from your terminal.
 
 Provided by [bbbserver](https://bbbserver.com).
 
