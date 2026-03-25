@@ -72,7 +72,7 @@ func newFakeServer(t *testing.T) *httptest.Server {
 				<meetings>
 					<meeting>
 						<meetingName>Test Meeting 1</meetingName>
-						<meetingID>meeting-1</meetingID>
+						<meetingID>meeting-with-a-very-long-id-1234567890</meetingID>
 						<running>true</running>
 						<participantCount>5</participantCount>
 						<recording>false</recording>
@@ -392,6 +392,9 @@ func TestGetMeetingsCommand(t *testing.T) {
 	}
 	if !strings.Contains(out, "Test Meeting 1") {
 		t.Errorf("output = %s, want meeting name", out)
+	}
+	if !strings.Contains(out, "meeting-with-a-very-long-id-1234567890") {
+		t.Errorf("output = %s, want full meeting ID", out)
 	}
 	if !strings.Contains(out, "Total: 1 meeting") {
 		t.Errorf("output = %s, want total count", out)

@@ -77,10 +77,10 @@ func runGetMeetings(cmd *cobra.Command, args []string) error {
 	}
 
 	return printFormatted(format, output, func() {
-		fmt.Fprintf(os.Stdout, "%-30s %-25s %-12s %-10s %-10s\n",
+		fmt.Fprintf(os.Stdout, "%-30s %-36s %-12s %-10s %-10s\n",
 			"Name", "Meeting ID", "Participants", "Recording", "Running")
-		fmt.Fprintf(os.Stdout, "%-30s %-25s %-12s %-10s %-10s\n",
-			"----", "----------", "------------", "---------", "-------")
+		fmt.Fprintf(os.Stdout, "%-30s %-36s %-12s %-10s %-10s\n",
+			"----", "------------------------------------", "------------", "---------", "-------")
 
 		for _, m := range resp.Meetings {
 			recording := "no"
@@ -91,9 +91,9 @@ func runGetMeetings(cmd *cobra.Command, args []string) error {
 			if m.Running {
 				running = "yes"
 			}
-			fmt.Fprintf(os.Stdout, "%-30s %-25s %-12d %-10s %-10s\n",
+			fmt.Fprintf(os.Stdout, "%-30s %-36s %-12d %-10s %-10s\n",
 				truncate(m.MeetingName, 28),
-				truncate(m.MeetingID, 23),
+				m.MeetingID,
 				m.ParticipantCount,
 				recording,
 				running,
